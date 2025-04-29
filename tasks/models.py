@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Task(models.Model):
 
     name = models.CharField(max_length=1024)
@@ -9,3 +10,4 @@ class Task(models.Model):
 
     def __str__(self) -> str:
         return self.name
+
